@@ -1,0 +1,19 @@
+pick-pocket
+===========
+
+Manage Pocket bookmarks on command line.
+
+USAGE
+--------
+$ perl pickpocket.pl <endpoint>  parameter_pairs...
+# for endpoint & parameter documentation goto
+# http://getpocket.com/developer/docs/overview
+
+EXAMPLES
+--------
+
+$ perl pocket_auth.pl # execute and follow instructions to authenticate
+
+$ perl pickpocket.pl '/v3/get' count 5| python -mjson.tool > q.json
+# retrive five items from your unread queue in JSON format
+
