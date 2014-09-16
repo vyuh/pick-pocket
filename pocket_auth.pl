@@ -41,6 +41,7 @@ $page=$response->{'content'};
 # $atok $usr
 open( USR, ">.pocket_usr_$usr");
 print USR join "\n", $atok, $usr; #SERVERDB #SAVE
+system("cp .pocket_usr_$usr .pocket_usr");
 
 print "welcome " . $usr . "!\n" ; #SERVER #SEND
 print "\n$ser Authentication done \n";
